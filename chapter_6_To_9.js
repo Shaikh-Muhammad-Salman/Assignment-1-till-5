@@ -42,22 +42,24 @@
 // alert("Hello "+a); //q3
 
 
+var userInput = prompt("Enter a number for multiplication table:");
 
-// var b = prompt("Enter your number");
-// if(b === null){
-//     b= 5 ;
-// }
-// console.log(b+" x 1 = "+b*1) ;
-// console.log(b+" x 2 = "+b*2) ;
-// console.log(b+" x 3 = "+b*3) ;
-// console.log(b+" x 4 = "+b*4) ;
-// console.log(b+" x 5 = "+b*5) ;
-// console.log(b+" x 6 = "+b*6) ;
-// console.log(b+" x 7 = "+b*7) ;
-// console.log(b+" x 8 = "+b*8) ;
-// console.log(b+" x 9 = "+b*9) ;
-// console.log(b+" x 10 = "+b*10) ; //q5
- 
+// Convert user input to a number
+var number = parseInt(userInput);
+
+// If user input is not a valid number, default to 5
+if (isNaN(number)) {
+    number = 5;
+}
+
+console.log("Multiplication Table of " + number);
+
+
+for (var i = 1; i <= 10; i++) {
+    var result = number * i;
+    console.log( number + " x " + i + " = " + result);
+}  //q5
+
 
 var subject1 = prompt("Enter the name of subject 1:");
 var subject2 = prompt("Enter the name of subject 2:");
