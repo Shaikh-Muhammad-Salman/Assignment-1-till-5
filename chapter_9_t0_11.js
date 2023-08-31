@@ -104,7 +104,7 @@
 
 // if((number%2)=== 0){
 //     console.log("The given number "+number+" is even");
-    
+
 // }else{
 //     console.log("The given number "+number+" is odd");
 // } //q9
@@ -126,24 +126,28 @@
 //     alert("I'm Freezing man");  
 // }  //q10
 
-var num1 = parseFloat(prompt("Enter first numer: "));
-var num2 = parseFloat(prompt("Enter second numer: "));
+var num1 = +prompt("Enter first numer: ");
+var num2 = +prompt("Enter second numer: ");
 var operator = prompt("Enter any operator from any one of the following: (+,-,*,/,%)");
-if(operator === "+"){
-    alert(`num1 + num2 is = ${num1+num2}`);
+
+if (isNaN(num1) || isNaN(num2)) {
+    alert("Not a number");
 }
-else if(operator === "-"){
-    alert(`num1 - num2 is = ${num1-num2}`);
+else if (operator === "+") {
+    alert(`num1 + num2 is = ${num1 + num2}`);
 }
-else if(operator === "*" || operator === "x" ||operator === "X"){
-    alert(`num1 x num2 is = ${num1*num2}`);
+else if (operator === "-") {
+    alert(`num1 - num2 is = ${num1 - num2}`);
 }
-else if(operator === "/"){
-    alert(`num1 / num2 is = ${num1/num2}`);
+else if (operator === "*" || operator === "x") {
+    alert(`num1 x num2 is = ${num1 * num2}`);
 }
-else if(operator === "%"){
-    alert(`num1 % num2 is = ${num1%num2}`);
+else if (operator === "/") {
+    alert(`num1 / num2 is = ${num1 / num2}`);
 }
-else{
+else if (operator === "%") {
+    alert(`num1 % num2 is = ${num1 % num2}`);
+}
+else {
     alert("Invalid operator")
 }
