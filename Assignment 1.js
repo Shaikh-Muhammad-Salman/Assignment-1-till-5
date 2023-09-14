@@ -23,3 +23,7 @@ alert("Updated Salary is " + Student_income);
 var counter = 1 ; 
 counter++ ;
 console.log(counter);
+
+
+
+
